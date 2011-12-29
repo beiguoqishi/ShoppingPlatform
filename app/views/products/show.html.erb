@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @product.name %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @product.price %>
+</p>
+
+<p>
+  <b>Belonged shop:</b>
+  <%= @product.belonged_shop %>
+</p>
+
+<p>
+  <b>Area:</b>
+  <%= @product.area %>
+</p>
+
+<p>
+  <b>Deals:</b>
+  <%= @product.deals %>
+</p>
+
+<p>
+  <b>Trans expense:</b>
+  <%= @product.trans_expense %>
+</p>
+
+<p>
+  <b>Picture:</b>
+  <%= @product.picture %>
+</p>
+
+<p>
+  <b>Color:</b>
+  <%= @product.color %>
+</p>
+
+<p>
+  <b>Eval grade:</b>
+  <%= @product.eval_grade %>
+</p>
+
+<p>
+  <b>Own score:</b>
+  <%= @product.own_score %>
+</p>
+
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>

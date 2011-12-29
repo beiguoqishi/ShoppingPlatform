@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  street: MyString
+  zip: MyString
+  city: MyString
+  building_date: 2011-12-29 20:42:03
+
+two:
+  name: MyString
+  street: MyString
+  zip: MyString
+  city: MyString
+  building_date: 2011-12-29 20:42:03

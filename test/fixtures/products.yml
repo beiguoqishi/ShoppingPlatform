@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  price: 
+  belonged_shop: MyString
+  area: MyString
+  deals: 1
+  trans_expense: 
+  picture: MyString
+  color: MyString
+  eval_grade: 
+  own_score: 
+
+two:
+  name: MyString
+  price: 
+  belonged_shop: MyString
+  area: MyString
+  deals: 1
+  trans_expense: 
+  picture: MyString
+  color: MyString
+  eval_grade: 
+  own_score: 

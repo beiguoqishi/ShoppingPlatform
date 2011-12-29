@@ -1,0 +1,41 @@
+<h1>Listing products</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Belonged shop</th>
+    <th>Area</th>
+    <th>Deals</th>
+    <th>Trans expense</th>
+    <th>Picture</th>
+    <th>Color</th>
+    <th>Eval grade</th>
+    <th>Own score</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @products.each do |product| %>
+  <tr>
+    <td><%= product.name %></td>
+    <td><%= product.price %></td>
+    <td><%= product.belonged_shop %></td>
+    <td><%= product.area %></td>
+    <td><%= product.deals %></td>
+    <td><%= product.trans_expense %></td>
+    <td><%= product.picture %></td>
+    <td><%= product.color %></td>
+    <td><%= product.eval_grade %></td>
+    <td><%= product.own_score %></td>
+    <td><%= link_to 'Show', product %></td>
+    <td><%= link_to 'Edit', edit_product_path(product) %></td>
+    <td><%= link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Product', new_product_path %>

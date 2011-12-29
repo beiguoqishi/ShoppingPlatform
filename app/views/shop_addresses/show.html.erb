@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @shop_address.name %>
+</p>
+
+<p>
+  <b>Street:</b>
+  <%= @shop_address.street %>
+</p>
+
+<p>
+  <b>Zip:</b>
+  <%= @shop_address.zip %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @shop_address.city %>
+</p>
+
+<p>
+  <b>Building date:</b>
+  <%= @shop_address.building_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_shop_address_path(@shop_address) %> |
+<%= link_to 'Back', shop_addresses_path %>

@@ -1,0 +1,25 @@
+<h1>Listing product_items</h1>
+
+<table>
+  <tr>
+    <th>Key</th>
+    <th>Value</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @product_items.each do |product_item| %>
+  <tr>
+    <td><%= product_item.key %></td>
+    <td><%= product_item.value %></td>
+    <td><%= link_to 'Show', product_item %></td>
+    <td><%= link_to 'Edit', edit_product_item_path(product_item) %></td>
+    <td><%= link_to 'Destroy', product_item, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Product item', new_product_item_path %>
