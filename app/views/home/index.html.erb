@@ -1,7 +1,61 @@
-<header id="header">
-  <span class="welcome">
-    您好，欢迎来到人人来商城！[<%= link_to '请登录',goto_login_users_path %>]，新用户？[<%= link_to '免费注册',new_user_path %>]
-  </span>
-  <ul class="shortcut">
-  </ul>
-</header>
+<!DOCTYPE html>
+<%= render 'header' %>
+<%= render 'search' %>
+<section class="main">
+  <aside class="categories">
+    <ul class="category-list">
+      <% @top_level_categories.each do |top_level_category| %>
+          <li class="category" style="height: 30px;">
+            <h4>
+              <a href="<%= top_level_category.url %>" title="<%= top_level_category.name %>"><%= top_level_category.name %></a>
+            </h4>
+
+            <p class="second_level_cateogry">
+              <% top_level_category.categories.each do |second_level_category| %>
+                  <a href="<%= second_level_category.url %>" title="<%= second_level_category.name %>"><%= second_level_category.name %></a>
+              <% end %>
+            </p>
+
+            <p class="third_level_category">
+              <% top_level_category.categories.each do |second_level_category| %>
+                <dl>
+                  <dt>
+                  <h4>
+                    <a href="<%= second_level_category.url %>" title="<%= second_level_category.name %>"><%= second_level_category.name %></a>
+                  </h4></dt>
+                  <dd>
+                    <% second_level_category.categories.each do |third_level_category| %>
+                        <a href="<%= third_level_category.url %>" title="<%= third_level_category.name %>"><%= third_level_category.name %></a>
+                    <% end %>
+                  </dd>
+                </dl>
+            <% end %>
+            </p>
+          </li>
+      <% end %>
+    </ul>
+  </aside>
+
+  <article class="populars">
+    <div class="popular-focus">
+      <ul class="popular-focus-list">
+        <% @popular_focus.each do |popular_item| %>
+            <li class="popular-focus-item">
+              <a href="<%= popular_item.url %>" title="<%= popular_item.name %>">
+                <%= image_tag(popular_item.img_url) %>
+              </a>
+            </li>
+        <% end %>
+      </ul>
+      
+      <ul class="popular-focus-order">
+        <% @popular_focus.each_with_index do |index| %>
+            <li><a href="javascript:void(0);"><%= index + 1 %></a></li>
+        <% end %>
+      </ul>
+    </div>
+
+  </article>
+</section>
+
+

@@ -1,0 +1,20 @@
+<section class="search">
+  <figure class="logo">
+    <%= image_tag('logo.gif') %>
+  </figure>
+  <form class="search-form">
+    <ul class="search-item-list">
+      <%@search_items.each do |search_item|%>
+        <li class="search-item">
+          <a href="<%= search_item[:url] %>" title="<%= search_item[:name] %>"><%= search_item[:name] %></a>
+        </li>
+      <%end%>
+    </ul>
+    <input name="word" type="text" id="search_input"/>
+    <input type="submit" value="搜索"/>
+  </form>
+  <div class="search-tools">
+    <a href="#">高级搜索</a>
+    <a href="#">使用帮助</a>
+  </div>
+</section>
