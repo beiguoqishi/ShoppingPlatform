@@ -80,4 +80,8 @@ class UsersController < ApplicationController
       format.json { head :ok }
     end
   end
+
+  def goto_login
+    render
+  end
 end

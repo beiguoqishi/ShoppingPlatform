@@ -9,7 +9,9 @@ ShoppingPlatform::Application.routes.draw do
 
   resources :products
 
-  resources :users
+  resources :users do
+    get :goto_login, :on => :collection
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
