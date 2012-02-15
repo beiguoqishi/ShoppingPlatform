@@ -2,13 +2,20 @@
 <html>
 <head>
   <title>ShoppingPlatform</title>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
+  <%= stylesheet_link_tag "reset" %>
+  <%= stylesheet_link_tag "common" %>
+  <%= stylesheet_link_tag "test" %>
+  <%= javascript_include_tag "html5" %>
+
   <%= csrf_meta_tags %>
 </head>
 <body>
 
 <%= yield %>
-
+<%= javascript_include_tag "common" %>
+<%= javascript_include_tag "shopping" %>
+<!--[if IE 6]>
+<!--<script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script>-->
+<!--<![endif]&ndash;&gt;-->
 </body>
 </html>

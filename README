@@ -1,1 +1,2 @@
 这是大学的毕业设计。
+{:level => 2,:url => '#',:name => '品牌女装',:desc => 'This is category 品牌女装'},{:level => 2,:url => '#',:name => '精致内衣',:desc => 'This is category 精致内衣'},{:level => 2,:url => '#',:name => '时尚家居',:desc => 'This is category 时尚家居'},{:level => 2,:url => '#',:name => '时尚配件',:desc => 'This is category 时尚配件'}

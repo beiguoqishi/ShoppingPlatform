@@ -1,0 +1,269 @@
+#header {
+    background: #eeeeee;
+    height: 25px;
+    border-bottom: 1px solid #cccccc;
+}
+
+#header #header_nav {
+    width: 960px;
+    margin: 0 auto;
+    line-height: 25px;
+    overflow: hidden;
+}
+
+#header #header_nav .welcome {
+    float: left;
+}
+
+#header #header_nav .shortcut {
+    float: right;
+}
+
+#header #header_nav .shortcut .shortcut-item {
+    float: left;
+    margin: 0 10px;
+    line-height: 25px;
+}
+
+#header #header_nav .shortcut .shortcut-item a {
+    float: left;
+}
+
+/*begin search*/
+.logo-search {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.logo-search .logo {
+    float: left;
+    width: 251px;
+    height: 46px;
+    margin-top: 45px;
+}
+
+.logo-search .search {
+    margin-left: 60px;
+    float: left;
+    margin-top: 10px;
+}
+
+.logo-search .search .search-item-list {
+    height: 30px;
+    margin-bottom: -2px;
+}
+
+.logo-search .search .search-item-list .search-item {
+    float: left;
+    margin-left: 21px;
+    line-height: 30px;
+}
+
+.logo-search .search .search-item-list .search-item a {
+    padding: 0 15px;
+    float: left;
+    color: #a7b6bd;
+    line-height: 30px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.logo-search .search .search-item-list .search-item.current {
+    background: url("/assets/search_tab_bg.png") no-repeat 0 0;
+    padding-left: 3px;
+    position: relative;
+    z-index: 1;
+}
+
+.logo-search .search .search-item-list .search-item.current a {
+    background: url("/assets/search_tab_bg.png") no-repeat right -33px;
+    color: #5b5c60;
+    cursor: default;
+}
+
+.logo-search .search .search-form {
+    clear: both;
+    float: left;
+    width: 534px;
+    padding: 20px 27px 27px 22px;
+    background: url("/assets/search-bg.png") no-repeat 0 -126px;
+}
+
+.logo-search .search .search-form .search-input {
+    display: block;
+    float: left;
+    width: 443px;
+    font-size: 24px;
+    background: none;
+    height: 28px;
+    padding-left: 6px;
+    padding-top: 5px;
+    border: none;
+    vertical-align: middle;
+}
+
+.logo-search .search .search-form .search-submit {
+    display: block;
+    float: right;
+    width: 85px;
+    height: 37px;
+    border: none;
+    background: url("/assets/search-bg.png") no-repeat 0 -80px;
+    cursor: pointer;
+}
+
+.logo-search .search .search-tools {
+    float: right;
+    margin: 20px 0 0 15px;
+    width: 50px;
+}
+
+.logo-search .search .search-tools a {
+    display: block;
+    float: left;
+    margin-top: 6px;
+}
+
+/*end search*/
+
+/*begin main*/
+.main {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.main .categories {
+    float: left;
+}
+
+.main .categories .category-list {
+    float: left;
+    background: #8d7f7e;
+    width: 190px;
+}
+
+.main .categories .category-list .category {
+    float: left;
+    width: 174px;
+    padding: 8px 8px 5px 8px;
+    border-bottom: 1px solid #7f7472;
+    position: relative;
+    cursor: pointer;
+}
+
+.main .categories .category-list .category h4 {
+    height: 20px;
+    line-height: 20px;
+    position: relative;
+}
+
+.main .categories .category-list .category h4 a, .main .categories .category-list .category .third-level-category h4 a {
+    text-align: left;
+    color: #fffcf9;
+}
+
+.main .categories .category-list .category h4 b {
+    position: absolute;
+    right: 0;
+}
+
+.main .categories .category-list .category .second-level-category a, .main .categories .category-list .category .third-level-category dl dd a {
+    margin: 7px 3px 0 0;
+    color: #e5dbd9;
+    display: inline-block;
+    *margin-right: 3px;
+}
+
+.main .categories .category-list .category .third-level-category {
+    position: absolute;
+    left: 190px;
+    top: 0;
+    background: #736767;
+    width: 320px;
+    padding-bottom: 10px;
+    display: none;
+    cursor: default;
+}
+
+.main .categories .category-list .category .third-level-category dl {
+    padding: 10px;
+    width: 300px;
+    border-bottom: 1px dotted #5c5050;
+    float: left;
+}
+
+.main .categories .category-list .category .third-level-category dl dt {
+    float: left;
+    width: 70px;
+    margin-top: 4px;
+}
+
+.main .categories .category-list .category .third-level-category dl dd {
+    float: left;
+    width: 230px;
+}
+
+.main .categories .category-list .category .third-level-category dl dd a {
+    color: #fffefb;
+    border-left: 1px solid #6b5b5b;
+    padding-left: 5px;
+}
+
+/*begin populars*/
+.main .populars {
+    float: left;
+    margin-left: 20px;
+}
+
+.main .populars .popular-focus {
+    position: relative;
+    width: 490px;
+    height: 170px;
+    overflow: hidden;
+}
+
+.main .populars .popular-focus .popular-focus-list {
+    float: left;
+    width: 490px;
+    height: 170px;
+    overflow: hidden;
+}
+
+.main .populars .popular-focus .popular-focus-list .popular-focus-item {
+    float: left;
+}
+
+.main .populars .popular-focus .popular-focus-list .popular-focus-item img {
+    float: left;
+}
+
+.main .populars .popular-focus .popular-focus-order {
+    position: absolute;
+    right: 15px;
+    bottom: 5px;
+}
+
+.main .populars .popular-focus .popular-focus-order li {
+    float: left;
+    margin-right: 10px;
+    opacity: 0.7;
+    background: #ffffff;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #DE7D4B;
+    font-size: 13px;
+    font-family: arial;
+}
+
+.main .populars .popular-focus .popular-focus-order li.focus-cur {
+    opacity: 1;
+    color: #ffffff;
+    background-color: #ff6600;
+    font-weight: bold;
+}
+
+/*end populars*/
+/*end main*/

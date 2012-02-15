@@ -1,0 +1,56 @@
+<section class="main">
+  <aside class="categories">
+    <ul class="category-list" id="category_list">
+      <% @top_level_categories.each do |top_level_category| %>
+          <li class="category">
+            <h4>
+              <a href="<%= top_level_category.url %>" title="<%= top_level_category.name %>"><%= top_level_category.name %></a>
+              <b>&gt;</b>
+            </h4>
+
+            <p class="second-level-category">
+              <% top_level_category.categories.each do |second_level_category| %>
+                  <a href="<%= second_level_category.url %>" title="<%= second_level_category.name %>"><%= second_level_category.name %></a>
+              <% end %>
+            </p>
+
+            <div class="third-level-category">
+              <% top_level_category.categories.each do |second_level_category| %>
+                  <dl>
+                    <dt>
+                    <h4>
+                      <a href="<%= second_level_category.url %>" title="<%= second_level_category.name %>"><%= second_level_category.name %></a>
+                    </h4></dt>
+                    <dd>
+                      <% second_level_category.categories.each do |third_level_category| %>
+                          <a href="<%= third_level_category.url %>" title="<%= third_level_category.name %>"><%= third_level_category.name %></a>
+                      <% end %>
+                    </dd>
+                  </dl>
+              <% end %>
+            </div>
+          </li>
+      <% end %>
+    </ul>
+  </aside>
+
+  <article class="populars">
+    <div class="popular-focus" id="popular_focus">
+      <ul class="popular-focus-list" id="popular_focus_list">
+        <% @popular_focus.each do |popular_item| %>
+            <li class="popular-focus-item">
+              <a href="<%= popular_item[:url] %>" title="<%= popular_item[:name] %>">
+                <%= image_tag(popular_item[:img_url]) %>
+              </a>
+            </li>
+        <% end %>
+      </ul>
+
+      <ul class="popular-focus-order" id="popular_focus_order">
+        <% @popular_focus.each_with_index do |item,index| %>
+            <li <%if index == 1 %>class='focus-cur'<%end%>><%= index + 1 %></li>
+        <% end %>
+      </ul>
+    </div>
+  </article>
+</section>

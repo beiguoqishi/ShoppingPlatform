@@ -3,7 +3,9 @@ ShoppingPlatform::Application.routes.draw do
 
   resources :shops
 
-  resources :categories
+  resources :categories do
+    resources :products
+  end
 
   resources :product_items
 
